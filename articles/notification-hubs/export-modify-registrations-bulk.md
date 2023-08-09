@@ -180,7 +180,7 @@ namespace ConsoleApplication1
             
             BlobContainerClient inputfilecontainer = new BlobContainerClient(STORAGE_ACCOUNT_CONNECTIONSTRING, STORAGE_ACCOUNT_CONNECTIONSTRING + "/" +         INPUT_FILE_NAME);
 
-            var inputFileSasUri = GetInputFileUrl(inputcontainer, INPUT_FILE_NAME);
+            var inputFileSasUri = GetInputFileUrl(inputfilecontainer, INPUT_FILE_NAME);
 
 
             // Import this file
